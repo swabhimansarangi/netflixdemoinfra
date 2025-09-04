@@ -7,7 +7,7 @@ resource "aws_instance" "one" {
   ami                    = "ami-0360c520857e3138f"
   instance_type          = "t2.medium"
   key_name               = "terakey"
-  vpc_security_group_ids = ["sg-02af2c1120008c789"]
+  vpc_security_group_ids = ["sg-077f3953a920d4e98"]
   tags = {
     Name = var.instance_names[count.index]
   }
